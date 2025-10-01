@@ -1,0 +1,76 @@
+📂 Struttura del Progetto Pac-Man
+
+pac_man_project/
+├── 📄 main.py                     # File principale per avviare il gioco
+├── 📄 requirements.txt            # Dipendenze del progetto
+├── 📄 README.md                   # Documentazione completa
+├── 📄 setup.py                    # Script di installazione automatica
+├── 📄 test_game.py                # Script per testare il progetto
+├── 📄 quick_test.py               # Test rapido del gioco
+├── 📄 run_game.sh                 # Script di avvio semplificato (Unix/macOS)
+├── 📄 .gitignore                  # File per escludere file da git
+├── 📁 config/                     # Configurazioni del gioco
+│   ├── 📄 __init__.py
+│   ├── 📄 settings.py             # Impostazioni globali (dimensioni, colori, velocità)
+│   └── 📄 maze.py                 # Layout del labirinto
+├── 📁 src/                        # Codice sorgente principale
+│   ├── 📄 __init__.py
+│   ├── 📁 entities/               # Entità del gioco (personaggi)
+│   │   ├── 📄 __init__.py
+│   │   ├── 📄 entity.py           # Classe base per tutte le entità
+│   │   ├── 📄 pacman.py           # Classe Pac-Man con animazioni
+│   │   └── 📄 ghost.py            # Classe Fantasmi con AI
+│   ├── 📁 game/                   # Logica principale del gioco
+│   │   ├── 📄 __init__.py
+│   │   ├── 📄 game.py             # Classe principale del gioco
+│   │   └── 📄 maze.py             # Gestione labirinto e pellet
+│   └── 📁 utils/                  # Utilità e helper
+│       ├── 📄 __init__.py
+│       ├── 📄 collision.py        # Gestione collisioni
+│       └── 📄 sound.py            # Sistema audio (preparato per future estensioni)
+├── 📁 assets/                     # Risorse (vuota, preparata per suoni/immagini)
+└── 📁 venv/                       # Ambiente virtuale Python (nascosto da .gitignore)
+
+🎮 CARATTERISTICHE IMPLEMENTATE:
+═══════════════════════════════════
+✅ Pac-Man animato con bocca che si apre/chiude
+✅ 4 Fantasmi colorati con diversi comportamenti AI
+✅ Labirinto completamente navigabile con tunnels
+✅ Sistema di punteggi (pellet normali e power pellet)
+✅ Modalità "spaventato" per i fantasmi
+✅ Gestione vite e game over
+✅ Sistema di pausa e restart
+✅ Interfaccia utente completa
+✅ Controlli responsive (frecce o WASD)
+✅ Architettura modulare e estendibile
+
+🚀 COME AVVIARE IL GIOCO:
+═══════════════════════════
+1. Attiva l'ambiente virtuale:
+   source venv/bin/activate
+
+2. Avvia il gioco:
+   python main.py
+
+   Oppure usa lo script semplificato:
+   ./run_game.sh
+
+🎯 CONTROLLI:
+═══════════════
+• Frecce direzionali o WASD: Muovi Pac-Man
+• SPAZIO: Pausa/Riprendi
+• R: Ricomincia (dopo game over)
+• ESC: Esci dal gioco
+
+🔧 FILE IMPORTANTI:
+═══════════════════
+• main.py: Punto di ingresso del gioco
+• src/game/game.py: Loop principale e logica di gioco
+• config/settings.py: Tutte le impostazioni modificabili
+• config/maze.py: Layout del labirinto
+• src/entities/: Tutte le classi dei personaggi
+
+📝 PRONTO PER L'USO!
+══════════════════════
+Il progetto è completo e funzionante. Tutte le dipendenze sono installate
+nell'ambiente virtuale e tutti i test sono passati con successo.
