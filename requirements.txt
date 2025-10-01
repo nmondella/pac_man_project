@@ -1,0 +1,2 @@
+# Dipendenze per il progetto Pac-Man
+pygame>=2.0.0
