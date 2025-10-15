@@ -141,7 +141,7 @@ Questo progetto è stato creato a scopo educativo e di intrattenimento.
 
 ## 👨‍💻 Autore
 
-Progetto Pac-Man - Ottobre 2025
+Nicholas Mondella - Ottobre 2025
 
 ---
 
